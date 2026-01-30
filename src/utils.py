@@ -46,7 +46,7 @@ def log_trade(action, symbol, quantity, price=None, status="ATTEMPT", details=No
     if status == "ERROR":
         logger.error(msg)
     elif status == "FILLED":
-        logger.info(f"✅ {msg}")
+        logger.info(f"{msg}")
     else:
         logger.info(msg)
 
